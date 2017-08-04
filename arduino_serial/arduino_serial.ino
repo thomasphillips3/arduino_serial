@@ -3,8 +3,8 @@ void setup() {
 }
 
 void loop() {
-  for (byte n = 0; n < 255; n++) {
-    Serial.write(n);
+  for (byte n = 0; n < 1024; n++) {
+    Serial.println(n, DEC);
     delay(50);
   }
 }
